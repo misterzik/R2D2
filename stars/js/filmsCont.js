@@ -1,14 +1,19 @@
 (function() {
 
-  var app = angular.module("starWarsapp", ["ne.swapi"]);
+  var app = angular.module("starWarsapp");
 
-  var FilmsController = function($scope, $routeParams, $http, swapi) {
+  var FilmsController = function($scope, CharacterService) {
 
-     swapi.films.all().then(function(films)){
-       $scope.films = films;
-    };
 
-};
+		CharacterService.getCharacters()
+			.then(function(result) {
+				console.log(result);
+				console.log(result.data);
+				$scope.characters = result.data.results;
+			});
+
+
+  };
 
   app.controller("FilmsController", FilmsController);
 

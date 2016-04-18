@@ -1,24 +1,27 @@
 <div class="container">
   <div class="jumbotron">
+
     <div class="row">
 
       <div class="col-md-8">
+<nav class="cl-effect-1">
+        <h1><a>
 
-        <a href="{{info.name}}">
+          {{info.name}}
 
-          <h2>{{info.name}}</h2>
-
-        </a>
+        </a></h1>
+      </nav>
       </div>
     </div>
 
+
     <div class="row">
-      <div class="col-md-2">
-        <a href="{{info.product_link}}"><img class="productImg" ng-src="{{info.photo}}" width="90%"/></a>
+      <div class="col-md-4">
+        <a href="{{info.product_link}}"><img class="hvr-push" ng-src="{{info.photo}}" width="300px"/></a>
       </div>
 
       <div class="col-md-3">
-
+<h5><u>Body Stats:</u></h5>
         <br/>
         Height:
         {{info.height}}
@@ -40,13 +43,23 @@
 <div class="row">
 <div class="col-md-12">
 
-{{info.films}}
+<h5><u>Appears on Films:</u></h5>
+<div ng-repeat="item in info.films">
+{{item}}
+</div>
 
+{{films}}
 
 </li>
 </div>
 </div>
 
+
+</div>
+
+
+<a ng-click="$back()" class="btn btn-danger">Back</a>
+
   </div>
-</div>
-</div>
+
+<br />

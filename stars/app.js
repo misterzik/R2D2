@@ -13,7 +13,7 @@
         templateUrl: "templates/display.html",
         controller: "DisplayController"
       })
-      .when("/Characters/Films", {
+      .when("/Films", {
         templateUrl: "templates/films.html",
         controller: "FilmsController",
         resolve: {
