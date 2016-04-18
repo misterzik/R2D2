@@ -1,0 +1,33 @@
+<div ng-repeat="item in todos">
+
+    <div class="container">
+
+        <div class="col-md-6">
+
+            <div class="row">
+
+                <div class="col-md-5">
+                    <a href="#/Characters/{{item.sku}}">
+
+                        <h3>
+            {{item.name}}</h3>
+
+                    </a>
+                </div>
+            </div>
+
+            <div class="row">
+
+                <div class="col-md-5">
+
+                    <br />
+                    <a ng-href="#/Characters/{{item.sku}}" target="_blank" class="btn btn-success">
+View Profile
+</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
