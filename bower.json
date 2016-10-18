@@ -1,0 +1,28 @@
+{
+  "name": "R2D2",
+  "homepage": "https://github.com/misterzik/R2D2",
+  "authors": [
+    "misterzik <nick.r@insanen.com>"
+  ],
+  "description": "AngularJS 1.x Boilerpoint with HTTP.GET Connection, and JSON Local Files.",
+  "main": "index.html",
+  "keywords": [
+    "angularjs"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.1.1",
+    "angular": "^1.5.8",
+    "bootstrap": "^3.3.7",
+    "angular-route": "^1.5.8",
+    "angular-resource": "^1.5.8",
+    "font-awesome": "^4.6.3"
+  }
+}

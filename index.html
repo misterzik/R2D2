@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en" ng-app="starWarsapp">
+<head>
+    <meta charset="utf-8">
+    <base href="/">
+    <title>R2-D2 Angular HTTP Example</title>
+    <meta content="R2D2 AngularJS 1.x" name="description">
+    <meta content="MisterZik" name="author">
+    <meta content="Nick Rodriguez" name="designer">
+    <link href="bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <!--[if lt IE 9]> <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script> <![endif]-->
+</head>
+<body class="ng-cloak">
+    <header>
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand active hvr-buzz" href="#/">r2D2</a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#/" class="hvr-wobble-to-top-right">Home</a></li>
+                      </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div ng-view></div>
+    <br />
+    <hr />
+    <footer>
+        <div class="container">
+            <div class="footer">
+                <a class="pull-left" border="0">
+                    <h5>&copy Copyright 2005-2016</h5>
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="bower_components/angular/angular.min.js"></script>
+    <script src="bower_components/angular-route/angular-route.min.js"></script>
+    <script src="bower_components/angular-resource/angular-resource.min.js"></script>
+    <script src="app.js"></script>
+    <script src="js/CharacterController.js"></script>
+    <script src="js/DisplayController.js"></script>
+    <script>
+        jQuery(function() {
+            jQuery('#myTab a:last').tab('show')
+        })
+    </script>
+</body>
+</html>
